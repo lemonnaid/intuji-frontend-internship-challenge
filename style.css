@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type:none;
+}
+
+:root{
+     /* ----------theme colors------- */
+
+  --purple-color: #4F46BA;
+  --blue-color: #3734A9;
+  --blue-bg-color: #C9E7F2;
+  --grey-color: #757095;
+  --grey-bg-color: #ebebeb;
+  --dark-grey-color: #e2e2e2;
+  --sky-blue-color: #DFF6FF;
+  --orange-color: #FF7F5C;
+  --bg-color: #FAFBFF;
+  --black-color: #000;
+  --white-color: #fff;
+}
+
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/Rectangle\ 158.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+.navbar{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
