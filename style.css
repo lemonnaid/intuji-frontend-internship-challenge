@@ -22,6 +22,20 @@ ul{
     list-style-type:none;
 }
 
+button{
+    background:var(--purple-color);
+    padding:14px 20px;
+    border:1px  solid var(--black-color);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--orange-color);
+    color: black;
+}
+
 :root{
      /* ----------theme colors------- */
 
@@ -41,12 +55,13 @@ ul{
 
 .hero{
     width: 100%;
-    min-height: 100vh;
+    height: 110vh;
     background-image: url(src/images/Rectangle\ 158.png);
     background-size: cover;
     background-position: center;
-    padding: 10px 10%;
+    padding: 0 10%;
     overflow: hidden;
+    position: relative;
 }
 
 .navbar{
@@ -67,19 +82,112 @@ ul{
     margin: 10px 15px;
 }
 
-.signin-btn{
-    margin-right: 50px;
-}
-button{
-    background:var(--purple-color);
-    padding:14px 20px;
-    border:1px  solid var(--pink);
-    color: white;
-    transition: 0.5s;
-    cursor: pointer;
+.nav-items ul li a:hover {
+    color:var(--orange-color);
 }
 
-button:hover{
+.nav-items li a::after
+ {
+    content:'';
+    width: 0;
+    height:2px;
+    background:var(--orange-color);
+    transition: 0.2s linear;
+    display:block;
+ }
+ .nav-items li a:hover::after{
+    width:80%;   
+}
+
+.signin-btn{
+    margin-right: 50px;
+    background: transparent;
+    color: var(--black-color);
+    border:none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-left h1{
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 30%;
+}
+.header-left p{
+    margin:30px 0;
+    color:#64607D;
+}
+.header-left .header-btn{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+button.btn1{
+    border-radius: 47px;
+    background-color: var(--blue-color);
+}
+button.btn1:hover{
     background: var(--orange-color);
     color: black;
 }
+
+.header-btn .play-btn {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.header-btn .header-btn-work{
+    color:var(--blue-color);
+    font-weight: 600;
+}
+.header-btn .play-btn{
+    margin-left: 40px;
+}
+.header-links{
+    color: var(--grey-color);
+    display: flex;
+    margin-top: 30px;
+}
+.header-links span{
+    cursor: pointer;
+}
+.header-links .check2{
+    margin-left: 35px;
+}
+.header-right .feature-img{
+    max-width: 100%;
+    max-height: 80%;
+    display: block;
+    margin-left:25%;
+}
+
+/*------- Brands -------*/
+.brand {
+    position: absolute;
+    background-color: #F5F6F8;
+    width: 100vw;
+    padding: 10px;
+    z-index: 5;
+  }
+  
+  .brand p {
+    color: black;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .container-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
