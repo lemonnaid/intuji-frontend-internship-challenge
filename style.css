@@ -42,7 +42,7 @@ ul{
 .hero{
     width: 100%;
     min-height: 100vh;
-    background-image: url(images/Rectangle\ 158.png);
+    background-image: url(src/images/Rectangle\ 158.png);
     background-size: cover;
     background-position: center;
     padding: 10px 10%;
@@ -70,9 +70,16 @@ ul{
 .signin-btn{
     margin-right: 50px;
 }
-.startfree-btn{
-    display: inline-block;
-    padding: 15px 20px;
-    background-color:var(--purple-color);
-    color: var(--white-color);
+button{
+    background:var(--purple-color);
+    padding:14px 20px;
+    border:1px  solid var(--pink);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--orange-color);
+    color: black;
 }
