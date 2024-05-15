@@ -513,6 +513,7 @@ button.btn1:hover{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap:30px;
+    padding-bottom: 50px;
 }
 .testimonial-card .testimonial-quotes{
     position: relative;
@@ -535,3 +536,37 @@ button.btn1:hover{
     transition: 0.5s;
 }
 
+/* ----banner--- */
+.banner{
+    background-color: var(--blue-color);
+    color:var(--white-color);
+    display: flex;
+}
+.banner-left{
+    width: 25%;
+    padding-right: 20px;
+    margin-right: 40px;
+    border-right: 3px solid black;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.banner-left p{
+    padding-left: 50%;
+}
+.banner-right{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.banner-heading{
+    font-size: 70px;
+    padding-left: 50px;
+    font-weight: 800;
+}
+.banner-subheading{
+    padding-left: 50px;
+    display: flex;
+}
