@@ -67,7 +67,6 @@ h1{
     background-position: center;
     padding: 0 10%;
     overflow: hidden;
-    position: relative;
 }
 
 .navbar{
@@ -258,7 +257,10 @@ button.btn1:hover{
     align-items: center;
     position: relative;
 }
-  
+
+.article-1-card:hover{
+    background-color: var(--blue-bg-color);
+}
 .card-number {
     position: absolute;
     top: 20px;
@@ -437,4 +439,54 @@ button.btn1:hover{
     left: 25px;
     top: -20px;
 }
+
+/*---------- feature ---------*/
+
+.feature{
+    background-color: var(--blue-bg-color);
+    margin-top: 10%;
+}
+.feature-content{
+    padding: 10% 10% 0;
+}
+.feature-heading h1{
+    font-size: 70px;
+}
+.feature-heading p{
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+.feature-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+}
+#feature-grid-1{
+    grid-row: 1/3;
+}
+#feature-grid-2{
+    grid-area: 1 / 2 / 3 /3;
+}
+.feature-grid{
+    border-radius: 10px;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    padding: 60px 40px 40px 40px;
+}
+.feature-grid:hover{
+    background-color: var(--yellow-color);
+}
+.feature-card-title{
+    font-size: 22px;
+    font-weight: 800;
+}
+#feature-grid-1 .feature-card-title,
+#feature-grid-2 .feature-card-title{
+    padding-top: 30px;
+}
+.feature-card-text{
+    padding-top: 30px;
+}
+
 
