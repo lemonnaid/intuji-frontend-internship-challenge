@@ -46,6 +46,7 @@ h1{
   --purple-color: #4F46BA;
   --light-purple-color: #e6e6fc;
   --blue-color: #3734A9;
+  --skyblue-bg-color: #DBF1FA;
   --blue-bg-color: #C9E7F2;
   --grey-color: #757095;
   --grey-bg-color: #C4C4C4;
@@ -211,19 +212,21 @@ button.btn1:hover{
     padding-top: 20px;
 }
   
-.article-1-sidecard {
+.article-1-sidecard,
+.article-3-sidecard {
     background-color: var(--grey-bg-color);
-    width: 45%;
-    border-radius: 20px;
-    position: relative;
-}
-.article-1-sidecard p{
-    padding: 45px 30px 0;
+    color: var(--black-color);
     font-weight: 600;
-
+    width: 35%;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 480px;
 }
-#article-1-author {
-    padding-top: 15px;
+.article-1-author {
+    padding-top: 10px;
 }
   
 .article-1-quotes {
@@ -306,11 +309,13 @@ button.btn1:hover{
 .article-2-right {
     flex: 1;
 }
-.article-2-subheading{
+.article-2-subheading,
+.article-3-subheading{
     color:var(--blue-color);
     font-weight: 600;
 }
-.article-2-heading h1{
+.article-2-heading h1,
+.article-3-heading h1{
     font-size: 48px;
     margin-top: 5px;
 }
@@ -387,3 +392,49 @@ button.btn1:hover{
 .article-2-card-container:nth-child(4) {
     margin-left: 10px;
 }
+
+/* ---------article3 --------*/
+
+.article-3 {
+    padding: 10% 10% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-3-left {
+    flex: 1;
+}
+  
+.article-3-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--skyblue-bg-color);
+    border-radius: 10px;
+    height: 540px;
+    width: 300px;
+    margin-left: 10%;
+}
+.article-3-right #article-3-right-chart{
+    margin-right: 100px;
+    margin-top: 30%;
+    position: absolute;
+}
+.article-3-right #article-3-right-img {
+    margin-right: 100px;
+    margin-top: -150px;
+    position:absolute;
+}
+.article-3-description{
+    font-size: 18px ;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color:var(--grey-text-color)
+}
+.article-3-quotes {
+    position: absolute;
+    left: 25px;
+    top: -20px;
+}
+
